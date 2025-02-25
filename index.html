@@ -2,184 +2,88 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>22B Project 1</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>22B Project 4</title>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/css/uikit.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit-icons.min.js"></script>
-  <style>
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      overflow: hidden;
-      background-color: black;
-    }
-
-    #nav-bar {
-      background-color: #303030;
-    }
-
-    .show-when-ready {
-      opacity: 0;
-      visibility: hidden;
-    }
-
-    #left-panel {
-      background-color: black;
-      padding: 0.3em;
-    }
-
-    #console-grid-root {
-      padding: 1em 0.5em 0 0.5em;
-    }
-
-    .vt100 {
-      width: 100vw;
-      max-width: 100%;
-      padding: 0.4em 0.4em 0.4em 1em;
-
-      font-family: monospace;
-      font-size: 0.8em;
-      line-height: 1.3em;
-
-      color: white;
-      background-color: black;
-    }
-
-    #status-line {
-      margin-top: 0.3em;
-      height: 1em;
-    }
-
-    #cout-lines {
-      padding-left: 1em;
-      height: calc(18 * 1.1em);
-      overflow-y: auto;
-      white-space: pre-wrap;
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-  <div id="app-root" class="show-when-ready">
+  <!-- Nav -->
+  <nav id="nav-bar" class="uk-navbar-container uk-navbar-sticky" uk-navbar>
+    <div class="uk-navbar-left nav-bar-text">
+      <span class="nav-bar-text uk-navbar-item uk-logo uk-margin-left">CIS 22B Project 4: Snake</span>
+    </div>
+    <div class="uk-navbar-right">
+      <label for="manual-toggle-btn" class="nav-bar-text">Recorded</label>
+      <input id="manual-toggle-btn" type="checkbox" class="uk-switch">
+      <label for="manual-toggle-btn" class="uk-margin-right nav-bar-text">Manual</label>
+    </div>
+  </nav>
 
-    <!-- Sticky Navbar -->
-    <nav id="nav-bar" class="uk-navbar-container uk-navbar-sticky" uk-navbar>
-      <div class="uk-navbar-left uk-light">
-        <span class="uk-navbar-item uk-logo uk-margin-left">CIS 22B Project 1: Creatures</span>
-      </div>
-      <div class="uk-navbar-right">
-        <button class="uk-button uk-button-default uk-light" type="button"
-          uk-toggle="target: #leaderboard-modal">Leaders</button>
-        <button class="uk-button uk-button-primary uk-margin-right" type="button"
-          uk-toggle="target: #submit-modal">Submit</button>
-      </div>
-    </nav>
+  <!-- Main container -->
+  <div class="main-container">
+    <div>
+      <canvas id="main-canvas"></canvas>
+      <div class="vt100" id="status-line"></div>
+    </div>
+  </div>
 
-    <!-- Main Flex Layout -->
-    <div class="uk-flex uk-flex-column uk-height-viewport">
-
-      <!-- Top Row (Controlled by JS) -->
-      <div id="top-row" class="uk-flex uk-width-1-1">
-        <div id="left-panel">
-          <div id="console-grid-root"></div>
-        </div>
-        <div id="right-panel" class="uk-flex-1 uk-padding-small uk-light" style="background-color:#505050;">
-          <form class="uk-form-stacked">
-            <!-- <label class="uk-form-label" for="file-upload">Upload Key File</label> -->
-
-            <!-- Drag & Drop Area -->
-            <div id="drop-area" class="uk-placeholder uk-text-center uk-margin-small uk-padding uk-border-dashed">
-              <span uk-icon="icon: cloud-upload"></span>
-              <p>Drop a recorded key file here or <span class="uk-text-primary">click to select</span></p>
-              <div uk-form-custom>
-                <input type="file" id="file-upload">
-                <button class="uk-button uk-button-default" type="button">Browse</button>
-              </div>
-              <p id="file-name" class="uk-text-small uk-margin-small"></p>
-            </div>
-
-            <!-- Playback -->
-            <div class="uk-flex uk-flex-middle uk-flex-between uk-width-medium uk-padding-small uk-border-rounded">
-              <button id="playback-btn" class="uk-button uk-button-default">Pause</button>
-              <input id="speed-slider" class="uk-range uk-width-small" type="range" min="0.5" max="2" step="0.1"
-                value="1">
-            </div>
-          </form>
-        </div>
-      </div>
-
-      <div>
-        <div class="vt100" id="status-line"></div>
-      </div>
-
-      <!-- Bottom Row -->
-      <div class="uk-flex-1 uk-background-secondary uk-flex">
-        <div class="vt100" id="cout-lines"></div>
-      </div>
-
+  <!-- Footer -->
+  <div id="footer-bar" class="uk-flex uk-padding uk-flex-between">
+    <div class="uk-flex">
+      <button id="playback-btn" class="uk-button" style="min-width: 75px;" disabled>
+        <i class="fa fa-pause"></i>
+      </button>
+      <input id="timeout-slider" class="uk-range uk-margin-small-left" type="range" min="0" max="4" step="1" value="2"
+        style="width: 100px;">
     </div>
 
+    <div class="uk-flex">
+      <div uk-form-custom="target: true">
+        <input type="file" id="fileInput">
+        <button id="upload-btn" class="uk-button uk-margin-right" type="button">Upload Key File</button>
+      </div>
+      <button id="submit-btn" class="uk-button uk-button-primary" disabled>Submit</button>
+    </div>
   </div>
 
   <!-- Submit Modal -->
   <div id="submit-modal" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
-      <h2 class="uk-modal-title">Submit Your Work</h2>
+      <h2 class="uk-modal-title">Submit Key File</h2>
 
-      <form id="submission-form">
+      <form id="submit-form">
         <div class="uk-margin">
           <label class="uk-form-label" for="first-name">First Name</label>
-          <input class="uk-input" id="first-name" type="text" placeholder="Enter your first name" required>
+          <input class="uk-input" id="first-name" type="text" required>
         </div>
 
         <div class="uk-margin">
           <label class="uk-form-label" for="last-name">Last Name</label>
-          <input class="uk-input" id="last-name" type="text" placeholder="Enter your last name" required>
+          <input class="uk-input" id="last-name" type="text" required>
         </div>
 
         <div class="uk-margin">
           <label class="uk-form-label" for="student-id">Student ID</label>
-          <input class="uk-input" id="student-id" type="text" placeholder="Enter your student ID" required>
+          <input class="uk-input" id="student-id" type="text" required>
         </div>
 
+        <p id="status-message" class="uk-text-muted uk-margin-small">Please enter your details.</p>
+
         <div class="uk-flex uk-flex-right uk-margin">
-          <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
-          <button class="uk-button uk-button-primary" type="submit">Submit</button>
+          <button type="button" class="uk-button uk-button-default uk-modal-close">Cancel</button>
+          <button type="submit" class="uk-button uk-button-primary">Submit</button>
         </div>
       </form>
     </div>
   </div>
 
-  <!-- Leaderboard Modal -->
-  <div id="leaderboard-modal" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body">
-      <h2 class="uk-modal-title">Leaderboard</h2>
-
-      <table class="uk-table uk-table-divider uk-table-hover">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Calories</th>
-            <th>Turns</th>
-            <th>Calories/Turn</th>
-          </tr>
-        </thead>
-        <tbody id="leaderboard-body"></tbody>
-      </table>
-
-      <div class="uk-flex uk-flex-right">
-        <button class="uk-button uk-button-default uk-modal-close">Close</button>
-      </div>
-    </div>
-  </div>
-
   <script defer type="module" src="./app.js"></script>
-
 </body>
 
 </html>
