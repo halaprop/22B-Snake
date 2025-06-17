@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>22B Creatures</title>
+  <title>22B Snake</title>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/css/uikit.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit.min.js"></script>
@@ -14,11 +14,11 @@
 
 <body>
 
-  <!-- Top Bar -->
+  <!-- Header -->
   <nav id="nav-bar" class="uk-navbar-container uk-navbar-sticky" uk-navbar>
 
     <div class="uk-navbar-left uk-light">
-      <span class="uk-navbar-item uk-logo uk-margin-left">Creatures</span>
+      <span class="uk-navbar-item uk-logo uk-margin-left">Snake</span>
     </div>
     <div class="uk-navbar-right">
       <button id="upload-btn" class="uk-button uk-button-default uk-light" type="button">Upload Key File</button>
@@ -28,10 +28,9 @@
     </div>
   </nav>
 
-  <!-- Side-by-side Layout Using UIKit -->
+  <!-- Main -->
   <div class="main-container uk-flex uk-flex-column">
     <canvas id="main-canvas"></canvas>
-    <div class="vt100 uk-margin" id="cout-lines"></div>
   </div>
 
   <!-- Footer -->
