@@ -1,0 +1,66 @@
+    body,
+    html {
+      margin: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: #303030;
+    }
+
+    .uk-button.uk-button-default.uk-light:hover {
+      color: #fff;
+    }
+
+    .uk-navbar-item.uk-logo {
+      font-weight: 100;
+    }
+
+    #nav-bar,
+    #footer-bar {
+      background-color: #505050;
+    }
+
+    /* Main content area */
+    .main-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+    canvas {
+      border: 0.5px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .vt100 {
+      width: 90%;
+      height: 15rem;
+      padding: 0.4em 0 0 0.4em;
+
+      font-family: monospace;
+      font-size: 0.8em;
+      line-height: 1.3em;
+
+      color: white;
+      background-color: black;
+    }
+
+    .vt100.status-line {
+      height: 1.5rem;
+      line-height: 1.2rem;
+      overflow: wrap;
+    }
+
+    .playback-control-btn {
+      min-width: 6rem;
+    }
+
+    .running-stat {
+      margin-top: 4px;
+      font-family: monospace;
+      display: inline-block;
+      min-width: 3ch;
+      text-align: right;
+      color: white
+    }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/css/uikit.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.0/dist/js/uikit.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <nav id="nav-bar" class="uk-navbar-container uk-navbar-sticky" uk-navbar>
+
+    <div class="uk-navbar-left uk-light">
+      <span id="title-bar-title" class="uk-navbar-item uk-logo uk-margin-left"></span>
+    </div>
+    <div class="uk-navbar-right">
+      <button id="upload-btn" class="uk-button uk-button-default uk-light" type="button">Upload Key File</button>
+      <button id="submit-btn" class="uk-button uk-button-primary uk-light uk-margin-right" type="button"
+        disabled>Submit</button>
+      <input id="key-file-input" type="file" accept=".txt,.json" style="display: none;">
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <div class="main-container uk-flex uk-flex-column">
+    <canvas id="main-canvas"></canvas>
+    <div id="cout-lines" class="vt100 uk-margin"></div>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer-bar" class="uk-flex uk-padding-small">
+    <button disabled id="playback-btn" class="uk-button playback-control-btn"><i class="fa fa-pause"></i></button>
+    <button disabled id="speed-btn" class="uk-button uk-margin-left playback-control-btn" type="button">1 &times;</button>
+    <div id="speed-select" uk-dropdown="mode: click">
+      <ul class="uk-nav uk-dropdown-nav">
+        <li><a href="#" data-sleep="240">&frac14; &times;</a></li>
+        <li><a href="#" data-sleep="120">&frac12; &times;</a></li>
+        <li><a href="#" data-sleep="60" class="uk-active">1 &times;</a></li>
+        <li><a href="#" data-sleep="30">2 &times;</a></li>
+        <li><a href="#" data-sleep="15">4 &times;</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Submission -->
+  <div id="submit-modal" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+      <h2 class="uk-modal-title">Submit Your Key File</h2>
+
+      <form id="submission-form">
+        <div class="uk-margin">
+          <label class="uk-form-label" for="first-name">First Name</label>
+          <input class="uk-input" id="first-name" type="text" placeholder="Enter your first name" required>
+        </div>
+
+        <div class="uk-margin">
+          <label class="uk-form-label" for="last-name">Last Name</label>
+          <input class="uk-input" id="last-name" type="text" placeholder="Enter your last name" required>
+        </div>
+
+        <div class="uk-margin">
+          <label class="uk-form-label" for="student-id">Student ID</label>
+          <input class="uk-input" id="student-id" type="text" placeholder="Enter your student ID" required>
+        </div>
+
+        <div class="uk-flex uk-flex-middle uk-margin">
+          <!-- Fixed-width wrapper for status -->
+          <div class="uk-flex uk-flex-middle">
+            <span id="status-msg">Status message</span>
+            <div id="spinner" class="uk-spinner uk-spinner-small uk-margin-left" uk-spinner></div>
+          </div>
+
+          <div class="uk-flex-auto uk-flex uk-flex-right">
+            <button id="cancel-btn" class="uk-button uk-button-default uk-modal-close uk-margin-small-right"
+              type="button">Cancel</button>
+            <button id="modal-submit-btn" class="uk-button uk-button-primary" type="submit">Submit</button>
+            <button id="okay-btn" class="uk-button uk-button-primary" type="button">Okay</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <script defer type="module" src="./app.js"></script>
+</body>
+
+</html>
