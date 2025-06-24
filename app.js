@@ -1,15 +1,19 @@
-// build.sh selects one or the other of these imports
+// *** build.sh makes substitutions beginning here *** //
+//
+// build selects one or the other of these imports
 // stripped for snake build
 import { SnakeApp } from "./snake.js";
 
-// In dev, this file is unaltered. Query param determines projectID.
-// build.sh replaces these lines with either a snake or creatures value:
-const projectID = (new URLSearchParams(window.location.search)).get("project")?.toLowerCase() === "snake" ? "Snake" : "Creatures";
+// This file is unaltered in dev. In dev, project is determined by the "project" query param.
+// build deletes the params variable and sets the projectID to Snake or Creatures.
+
+// build replaces these ternarys with one or the other value
 const project = SnakeApp;
 const namespace = "SNAKE_SUBMISSIONS";
-const SUBMISSIONS_WRITE = "DyD/...";
+const SUBMISSIONS_WRITE = "DyD/AKdZj3dp5kLG.BKj4KzVkKvpv3+GCmWcrqIT/JtXdw6+oGxw/xZaVbN0ZwcVcdNoWDToL9vIOCV5/CzgDJIP6t8/PaZ8GrQQZXZZJ/jtjofvuYg==";
+//
+// *** build.sh ends substitutions here *** //
 
-// Code from this point forward is not altered by build.sh
 import { readKeys, rleCompress } from "./key-file-reader.js";
 import { RemoteStorage } from "./remoteStorage.mjs";
 
@@ -62,10 +66,6 @@ class App {
     });
 
     this.submitStateReady();
-
-    if (params.get("mode") == "admin") {
-      console.log("admin");
-    }
 
     // menu bar submit
     submitBtn.addEventListener('click', () => {
