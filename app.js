@@ -6,6 +6,7 @@ import { SnakeApp } from "./snake.js";
 
 // This file is unaltered in dev. In dev, project is determined by the "project" query param.
 // build deletes the params variable and sets the projectID to Snake or Creatures.
+const params = new URLSearchParams(window.location.search);
 
 // build replaces these ternarys with one or the other value
 const project = SnakeApp;
