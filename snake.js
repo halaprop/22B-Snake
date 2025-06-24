@@ -1,1 +1,291 @@
-function a0_0x2fb3(){const _0x2c4225=['next','16VpbMwj','head','pushBack','step','draw','statusString','gameOver','popBack','intersects','setStatusLine','drawCharAt','dCol','sleepTimeout','drawChars','assign','calories','2496984uOLXCA','randomColor','turnCount','headGlyph','rand','ArrowUp','Length:\x20','red','pushFront','getElementById','2168676nubDWE','252420QVKCaH','954406xjkOWv','value','randBetween','pink','yellow','rowCount','ArrowDown','col','randomCandy','ArrowLeft','dRow','.\x20Metric:\x20','candy','color','Ouch,\x20my\x20nose!','cyan','willCrash','white','ArrowRight','grid','eat','steer','randomPosition','length','keydown','headIntersects','12923496SYdyZT','1284819OYRAAV','metric','seed','row','snake','setSeed','popFront','glyph','colCount','422545xJEVPS','tail','cout'];a0_0x2fb3=function(){return _0x2c4225;};return a0_0x2fb3();}const a0_0x5bb4fc=a0_0x1325;(function(_0x58546c,_0x28b280){const _0x424f70=a0_0x1325,_0x2db321=_0x58546c();while(!![]){try{const _0x1944d0=-parseInt(_0x424f70(0x9e))/0x1+-parseInt(_0x424f70(0x9f))/0x2+parseInt(_0x424f70(0x76))/0x3+parseInt(_0x424f70(0x83))/0x4*(-parseInt(_0x424f70(0x7f))/0x5)+-parseInt(_0x424f70(0x9d))/0x6+-parseInt(_0x424f70(0x93))/0x7+parseInt(_0x424f70(0x75))/0x8;if(_0x1944d0===_0x28b280)break;else _0x2db321['push'](_0x2db321['shift']());}catch(_0x55b9bb){_0x2db321['push'](_0x2db321['shift']());}}}(a0_0x2fb3,0x3ef65));import{ConsoleGrid,Cout}from'./console-grid.js';export class SnakeApp{constructor(){const _0x2821da=a0_0x1325,_0x10552f={'canvas':document['getElementById']('main-canvas'),'rowCount':0x14,'colCount':0x1e,'backgroundDots':!![]};this[_0x2821da(0x8f)]=0x64,this['grid']=new ConsoleGrid(_0x10552f);const _0x2b7158=document[_0x2821da(0x9c)]('cout-lines');this[_0x2821da(0x81)]=new Cout(_0x2b7158),this[_0x2821da(0x95)]=0x0,this[_0x2821da(0x89)]=![],this[_0x2821da(0x7a)]=new Snake(),this[_0x2821da(0x7a)]['drawChars'](this['grid']),this[_0x2821da(0xab)]=Candy[_0x2821da(0xa7)](this[_0x2821da(0x7a)],this['grid'][_0x2821da(0xa4)],this[_0x2821da(0x6e)][_0x2821da(0x7e)]),this[_0x2821da(0xab)]['draw'](this[_0x2821da(0x6e)]),this[_0x2821da(0x6e)][_0x2821da(0x8c)](this[_0x2821da(0x88)]());}['metric'](){const _0x527bf8=a0_0x1325,_0x4b667c=this[_0x527bf8(0x95)],_0x14ac98=this[_0x527bf8(0x7a)][_0x527bf8(0x72)]();return _0x4b667c==0x0?0x0:0x1*_0x14ac98*_0x14ac98/_0x4b667c;}[a0_0x5bb4fc(0x88)](_0x5e25ff){const _0x4e0ef7=a0_0x5bb4fc;let _0x33ac09=_0x4e0ef7(0x99)+this['snake']['length']()+'\x20Turns:\x20'+this['turnCount']+_0x4e0ef7(0xaa)+this[_0x4e0ef7(0x77)]()['toFixed'](0x3);if(_0x5e25ff)_0x33ac09+='.\x20'+_0x5e25ff;return _0x33ac09;}[a0_0x5bb4fc(0x73)](_0x23822a){const _0x3587a6=a0_0x5bb4fc;let _0x2e235d='';switch(_0x23822a){case _0x3587a6(0xa8):case _0x3587a6(0x6d):case _0x3587a6(0x98):case _0x3587a6(0xa5):this[_0x3587a6(0x7a)][_0x3587a6(0x70)](_0x23822a,this[_0x3587a6(0x6e)],this['candy']['row'],this['candy']['col']);break;case'Q':case'q':this[_0x3587a6(0x89)]=!![];default:break;}!this[_0x3587a6(0x89)]&&(this[_0x3587a6(0x7a)][_0x3587a6(0x6b)](this[_0x3587a6(0x6e)])?(this['gameOver']=!![],_0x2e235d=_0x3587a6(0xad)):(this['snake']['step'](this[_0x3587a6(0x6e)]),this[_0x3587a6(0x7a)][_0x3587a6(0x74)](this[_0x3587a6(0xab)]['row'],this['candy'][_0x3587a6(0xa6)])&&(this['snake'][_0x3587a6(0x6f)](this[_0x3587a6(0xab)][_0x3587a6(0x92)]),this[_0x3587a6(0x7a)][_0x3587a6(0xac)]=this['candy']['color'],this[_0x3587a6(0x7a)][_0x3587a6(0x90)](this[_0x3587a6(0x6e)]),this[_0x3587a6(0xab)]=Candy['randomCandy'](this[_0x3587a6(0x7a)],this[_0x3587a6(0x6e)]['rowCount'],this[_0x3587a6(0x6e)][_0x3587a6(0x7e)]),this[_0x3587a6(0xab)][_0x3587a6(0x87)](this[_0x3587a6(0x6e)]))),this[_0x3587a6(0x95)]++,this[_0x3587a6(0x6e)]['setStatusLine'](this[_0x3587a6(0x88)](_0x2e235d))),this[_0x3587a6(0x6e)]['setStatusLine'](this[_0x3587a6(0x88)](_0x2e235d));}}class ListNode{constructor(_0xb3f6c1,_0x350dd8=null){const _0x1b62ad=a0_0x5bb4fc;this[_0x1b62ad(0xa0)]=_0xb3f6c1,this[_0x1b62ad(0x82)]=_0x350dd8;}}class LinkedList{constructor(){const _0x562558=a0_0x5bb4fc;this[_0x562558(0x84)]=null;}[a0_0x5bb4fc(0x9b)](_0x2183d7){const _0x1befe5=a0_0x5bb4fc;this[_0x1befe5(0x84)]=new ListNode(_0x2183d7,this['head']);}[a0_0x5bb4fc(0x7c)](){const _0x4fbc36=a0_0x5bb4fc;this[_0x4fbc36(0x84)]&&(this[_0x4fbc36(0x84)]=this[_0x4fbc36(0x84)][_0x4fbc36(0x82)]);}[a0_0x5bb4fc(0x85)](_0x482479){const _0x4ed188=a0_0x5bb4fc,_0x279654=this[_0x4ed188(0x80)](),_0x39827a=new ListNode(_0x482479);_0x279654?_0x279654[_0x4ed188(0x82)]=_0x39827a:this[_0x4ed188(0x84)]=_0x39827a;}[a0_0x5bb4fc(0x8a)](){const _0x3f726f=a0_0x5bb4fc,_0x1986a0=this['tail']();if(_0x1986a0){if(this[_0x3f726f(0x84)]==_0x1986a0)this['head']=null;else{let _0x5639df=this[_0x3f726f(0x84)];while(_0x5639df[_0x3f726f(0x82)]!=_0x1986a0)_0x5639df=_0x5639df[_0x3f726f(0x82)];_0x5639df[_0x3f726f(0x82)]=null;}}}[a0_0x5bb4fc(0x80)](){let _0xc1e96a=null;for(let _0x49d521=this['head'];_0x49d521;_0x49d521=_0x49d521['next']){_0xc1e96a=_0x49d521;}return _0xc1e96a;}['length'](){const _0xfb9e45=a0_0x5bb4fc;let _0x2c3cb0=0x0;for(let _0x5adcf2=this[_0xfb9e45(0x84)];_0x5adcf2;_0x5adcf2=_0x5adcf2[_0xfb9e45(0x82)]){_0x2c3cb0++;}return _0x2c3cb0;}}function a0_0x1325(_0x3cb0df,_0x596202){const _0x2fb3d4=a0_0x2fb3();return a0_0x1325=function(_0x132550,_0x4b420f){_0x132550=_0x132550-0x6a;let _0x120466=_0x2fb3d4[_0x132550];return _0x120466;},a0_0x1325(_0x3cb0df,_0x596202);}class Snake extends LinkedList{constructor(){const _0x546634=a0_0x5bb4fc;super(),this[_0x546634(0x92)]=0x0,this[_0x546634(0xac)]=_0x546634(0x6c),this[_0x546634(0x7d)]='o',this[_0x546634(0x96)]='@',this[_0x546634(0xa9)]=0x0,this[_0x546634(0x8e)]=0x1,this[_0x546634(0x85)]({'row':0x5,'col':0x5}),this[_0x546634(0x85)]({'row':0x5,'col':0x4}),this[_0x546634(0x85)]({'row':0x5,'col':0x3});}[a0_0x5bb4fc(0x6b)](_0x45857f){const _0x53db59=a0_0x5bb4fc,_0xb62cd3=this[_0x53db59(0x84)][_0x53db59(0xa0)][_0x53db59(0x79)]+this[_0x53db59(0xa9)],_0x15806d=this[_0x53db59(0x84)]['value'][_0x53db59(0xa6)]+this[_0x53db59(0x8e)],_0x33fa29=_0xb62cd3>=0x0&&_0xb62cd3<_0x45857f[_0x53db59(0xa4)]&&_0x15806d>=0x0&&_0x15806d<_0x45857f[_0x53db59(0x7e)];return!_0x33fa29||this[_0x53db59(0x8b)](_0xb62cd3,_0x15806d);}[a0_0x5bb4fc(0x74)](_0x5d79ec,_0x4ada36){const _0x5d6152=a0_0x5bb4fc;return this[_0x5d6152(0x84)]['value'][_0x5d6152(0x79)]==_0x5d79ec&&this[_0x5d6152(0x84)][_0x5d6152(0xa0)][_0x5d6152(0xa6)]==_0x4ada36;}[a0_0x5bb4fc(0x8b)](_0x306eb7,_0x17c763){const _0x590989=a0_0x5bb4fc;let _0xff6a6a=![],_0x4be735=this['head'];while(_0x4be735){if(_0x4be735['value']['row']==_0x306eb7&&_0x4be735[_0x590989(0xa0)]['col']==_0x17c763){_0xff6a6a=!![];break;}_0x4be735=_0x4be735[_0x590989(0x82)];}return _0xff6a6a;}[a0_0x5bb4fc(0x90)](_0x582b9f){const _0xc0cc46=a0_0x5bb4fc;let _0x498e67=this[_0xc0cc46(0x96)];for(let _0x17c9ee=this['head'];_0x17c9ee;_0x17c9ee=_0x17c9ee[_0xc0cc46(0x82)]){_0x582b9f[_0xc0cc46(0x8d)](_0x17c9ee[_0xc0cc46(0xa0)][_0xc0cc46(0x79)],_0x17c9ee['value'][_0xc0cc46(0xa6)],_0x498e67,this[_0xc0cc46(0xac)]),_0x498e67=this[_0xc0cc46(0x7d)];}}['steer'](_0x3ea567,_0x108f00,_0x3bb518,_0x206fae){const _0x2def5b=a0_0x5bb4fc;this[_0x2def5b(0xa9)]=0x0,this[_0x2def5b(0x8e)]=0x0;switch(_0x3ea567){case _0x2def5b(0xa8):this[_0x2def5b(0x8e)]=-0x1;break;case'ArrowRight':this[_0x2def5b(0x8e)]=0x1;break;case _0x2def5b(0x98):this['dRow']=-0x1;break;case'ArrowDown':this[_0x2def5b(0xa9)]=0x1;break;default:break;}}[a0_0x5bb4fc(0x86)](_0x3a5787){const _0x398d15=a0_0x5bb4fc;let _0x4d8efc=this[_0x398d15(0x84)][_0x398d15(0xa0)]['row']+this['dRow'],_0x18acad=this[_0x398d15(0x84)]['value'][_0x398d15(0xa6)]+this[_0x398d15(0x8e)];_0x3a5787[_0x398d15(0x8d)](this[_0x398d15(0x84)][_0x398d15(0xa0)]['row'],this[_0x398d15(0x84)][_0x398d15(0xa0)]['col'],this[_0x398d15(0x7d)],this[_0x398d15(0xac)]),this[_0x398d15(0x9b)]({'row':_0x4d8efc,'col':_0x18acad}),_0x3a5787[_0x398d15(0x8d)](_0x4d8efc,_0x18acad,this[_0x398d15(0x96)],this[_0x398d15(0xac)]);if(this[_0x398d15(0x92)]>0x0)this[_0x398d15(0x92)]--;else{const _0x47a9f0=this['tail']();_0x3a5787['eraseCharAt'](_0x47a9f0[_0x398d15(0xa0)][_0x398d15(0x79)],_0x47a9f0[_0x398d15(0xa0)][_0x398d15(0xa6)]),this[_0x398d15(0x8a)]();}}[a0_0x5bb4fc(0x6f)](_0x70a5b0){const _0xb441af=a0_0x5bb4fc;this[_0xb441af(0x92)]+=_0x70a5b0;}}class Candy{constructor(_0x1ad73f){const _0x2e4b8f=a0_0x5bb4fc;Object[_0x2e4b8f(0x91)](this,_0x1ad73f);}static[a0_0x5bb4fc(0xa7)](_0xe46b86,_0x3527c7,_0x331c2b){const _0x4dc560=a0_0x5bb4fc,{row:_0x10e1ad,col:_0xaff01d}=this[_0x4dc560(0x71)](_0xe46b86,_0x3527c7,_0x331c2b),_0x21d41a=this[_0x4dc560(0x94)](),_0x149434=Random[_0x4dc560(0xa1)](0x1,0xa),_0x4dc677=''+_0x149434;return new Candy({'row':_0x10e1ad,'col':_0xaff01d,'calories':_0x149434,'glyph':_0x4dc677,'color':_0x21d41a});}static[a0_0x5bb4fc(0x71)](_0x4ef8b8,_0x207da9,_0x4f5fc4){const _0x5c7bb9=a0_0x5bb4fc;let _0x5a9bc3,_0x95857d;do{_0x5a9bc3=Random[_0x5c7bb9(0xa1)](0x0,_0x207da9),_0x95857d=Random[_0x5c7bb9(0xa1)](0x0,_0x4f5fc4);}while(_0x4ef8b8[_0x5c7bb9(0x8b)](_0x5a9bc3,_0x95857d));return{'row':_0x5a9bc3,'col':_0x95857d};}static[a0_0x5bb4fc(0x94)](){const _0x32da36=a0_0x5bb4fc,_0x45d765=[_0x32da36(0x9a),'lime',_0x32da36(0xa3),_0x32da36(0x6a),'magenta','orange',_0x32da36(0xa2)];return _0x45d765[Random[_0x32da36(0xa1)](0x0,_0x45d765[_0x32da36(0x72)])];}['draw'](_0x31277a){const _0xaf03fc=a0_0x5bb4fc;_0x31277a[_0xaf03fc(0x8d)](this[_0xaf03fc(0x79)],this['col'],this[_0xaf03fc(0x7d)],this[_0xaf03fc(0xac)]);}}class RandANSI{constructor(_0x226130=0x1){const _0x237400=a0_0x5bb4fc;this[_0x237400(0x78)]=_0x226130;}[a0_0x5bb4fc(0x7b)](_0x3b25c9){const _0x5e91b3=a0_0x5bb4fc;this[_0x5e91b3(0x78)]=_0x3b25c9;}[a0_0x5bb4fc(0x97)](){const _0x1906b9=a0_0x5bb4fc;return(this['seed']=Number((BigInt(this[_0x1906b9(0x78)])*0x41c64e6dn+0x3039n)%0x80000000n))>>0x10&0x7fff;}['randBetween'](_0x5c0966,_0x5159e7){return _0x5c0966+this['rand']()%(_0x5159e7-_0x5c0966);}}const Random=new RandANSI();
+import { ConsoleGrid, Cout } from "./console-grid.js";
+
+export class SnakeApp {
+  constructor() {
+    const gridParams = {
+      canvas: document.getElementById("main-canvas"),
+      rowCount: 20,
+      colCount: 30,
+      backgroundDots: true
+    };
+    this.sleepTimeout = 100;
+    this.grid = new ConsoleGrid(gridParams);
+    const coutEl = document.getElementById('cout-lines');
+    this.cout = new Cout(coutEl);
+
+    this.turnCount = 0;
+    this.gameOver = false;
+
+    this.snake = new Snake();
+    this.snake.drawChars(this.grid);
+    this.candy = Candy.randomCandy(this.snake, this.grid.rowCount, this.grid.colCount);
+    this.candy.draw(this.grid);
+    this.grid.setStatusLine(this.statusString());
+  }
+
+  metric() {
+    const turnCount = this.turnCount;
+    const length = this.snake.length();
+    return turnCount == 0 ? 0 : 1.0 * length * length / turnCount;
+  }
+
+  statusString(status) {
+    let result = `Length: ${this.snake.length()} Turns: ${this.turnCount}. Metric: ${this.metric().toFixed(3)}`;
+    if (status) result += `. ${status}`;
+    return result;
+  }
+
+  keydown(key) {
+    let status = '';
+
+    switch (key) {
+      case "ArrowLeft":
+      case "ArrowRight":
+      case "ArrowUp":
+      case "ArrowDown":
+        this.snake.steer(key, this.grid, this.candy.row, this.candy.col);
+        break;
+      case 'Q':
+      case 'q':
+        this.gameOver = true;
+      default: break;
+    }
+
+    if (!this.gameOver) {
+      if (this.snake.willCrash(this.grid)) {
+        this.gameOver = true;
+        status = 'Ouch, my nose!';
+      } else {
+        this.snake.step(this.grid);
+        if (this.snake.headIntersects(this.candy.row, this.candy.col)) {
+          this.snake.eat(this.candy.calories);
+          this.snake.color = this.candy.color;
+          this.snake.drawChars(this.grid);
+
+          this.candy = Candy.randomCandy(this.snake, this.grid.rowCount, this.grid.colCount);
+          this.candy.draw(this.grid);
+        }
+      }
+      this.turnCount++;
+      this.grid.setStatusLine(this.statusString(status));
+    }
+    this.grid.setStatusLine(this.statusString(status));
+  }
+
+}
+
+class ListNode {
+  constructor(value, next = null) {
+    this.value = value;
+    this.next = next;
+  }
+}
+
+class LinkedList {
+  constructor() {
+    this.head = null;
+  }
+
+  pushFront(value) {
+    this.head = new ListNode(value, this.head);
+  }
+
+  popFront() {
+    if (this.head) {
+      this.head = this.head.next;
+    }
+  }
+
+  pushBack(value) {
+    const tail = this.tail();
+    const newNode = new ListNode(value);
+    if (tail) {
+      tail.next = newNode;
+    } else {
+      this.head = newNode;
+    }
+  }
+
+  popBack() {
+    const tail = this.tail();
+    if (tail) {
+      if (this.head == tail) {
+        this.head = null;
+      } else {
+        let node = this.head;
+        while (node.next != tail) node = node.next;
+        node.next = null;
+      }
+    }
+  }
+
+  tail() {
+    let prevNode = null;
+    for (let node = this.head; node; node = node.next) {
+      prevNode = node;
+    }
+    return prevNode;
+  }
+
+  length() {
+    let result = 0;
+    for (let node = this.head; node; node = node.next) {
+      result++;
+    }
+    return result;
+  }
+}
+
+class Snake extends LinkedList {
+  constructor() {
+    super();
+    this.calories = 0;
+    this.color = 'white';
+    this.glyph = 'o';
+    this.headGlyph = '@';
+    this.dRow = 0;
+    this.dCol = 1;
+
+    this.pushBack({ row: 5, col: 5 });
+    this.pushBack({ row: 5, col: 4 });
+    this.pushBack({ row: 5, col: 3 });
+  }
+
+  willCrash(grid) {
+    const nextRow = this.head.value.row + this.dRow;
+    const nextCol = this.head.value.col + this.dCol;
+
+    const inBounds = nextRow >= 0 && nextRow < grid.rowCount && nextCol >= 0 && nextCol < grid.colCount;
+    return !inBounds || this.intersects(nextRow, nextCol);
+  }
+
+  headIntersects(row, col) {
+    return this.head.value.row == row && this.head.value.col == col;
+  }
+
+  intersects(row, col) {
+    let result = false;
+    let node = this.head;
+    while (node) {
+      if (node.value.row == row && node.value.col == col) {
+        result = true;
+        break;
+      }
+      node = node.next;
+    }
+    return result;
+  }
+
+  drawChars(grid) {
+    let glyph = this.headGlyph;
+    for (let node = this.head; node; node = node.next) {
+      grid.drawCharAt(node.value.row, node.value.col, glyph, this.color);
+      glyph = this.glyph;
+    }
+  }
+
+  steer(key, grid, candyRow, candyCol) {
+    this.dRow = 0;
+    this.dCol = 0;
+    switch (key) {
+      case "ArrowLeft":
+        this.dCol = -1;
+        break;
+      case "ArrowRight":
+        this.dCol = 1;
+        break;
+      case "ArrowUp":
+        this.dRow = -1;
+        break;
+      case "ArrowDown":
+        this.dRow = 1;
+        break;
+      default: break;
+    }
+  }
+
+  step(grid) {
+    let nextRow = this.head.value.row + this.dRow;
+    let nextCol = this.head.value.col + this.dCol;
+    grid.drawCharAt(this.head.value.row, this.head.value.col, this.glyph, this.color);
+    this.pushFront({ row: nextRow, col: nextCol });
+    grid.drawCharAt(nextRow, nextCol, this.headGlyph, this.color);
+    if (this.calories > 0) {
+      this.calories--;
+    } else {
+      const tail = this.tail();
+      grid.eraseCharAt(tail.value.row, tail.value.col);
+      this.popBack();
+    }
+  }
+
+  eat(calories) {
+    this.calories += calories;
+  }
+
+}
+
+class Candy {
+  constructor(params) {
+    Object.assign(this, params);
+  }
+
+  static randomCandy(snake, rowCount, colCount) {
+    const { row, col } = this.randomPosition(snake, rowCount, colCount);
+    const color = this.randomColor();
+    const calories = Random.randBetween(1, 10);
+    const glyph = `${calories}`;
+    return new Candy({ row, col, calories, glyph, color });
+  }
+
+  static randomPosition(snake, rowCount, colCount) {
+    let row, col;
+    do {
+      row = Random.randBetween(0, rowCount);
+      col = Random.randBetween(0, colCount);
+    } while (snake.intersects(row, col));
+    return { row, col };
+  }
+
+  static randomColor() {
+    //const colors = ['red', 'green', 'blue', 'yellow']
+    const colors = ['red', 'lime', 'yellow', 'cyan', 'magenta', 'orange', 'pink']
+    return colors[Random.randBetween(0, colors.length)];
+  }
+
+  draw(grid) {
+    grid.drawCharAt(this.row, this.col, this.glyph, this.color);
+  }
+}
+
+/* Implementation of rand() from ANSI C as per wikipedia's article on Linear Congruential Generators
+
+https://en.wikipedia.org/wiki/Linear_congruential_generator#Parameters_in_common_use
+
+modulus = 2**31 = 2147483648
+multiplier = 1103515245
+increment = 12345
+bits returned 30..16, 15 bits means RAND_MAX = 32767
+
+n = (n * multiplier + increment) % 2147483648
+*/
+
+class RandANSI {
+  constructor(seed = 1) {
+    this.seed = seed;
+  }
+
+  setSeed(seed) {
+    this.seed = seed;
+  }
+
+  rand() {
+    return ((this.seed = Number((BigInt(this.seed) * 1103515245n + 12345n) % 2147483648n)) >> 16) & 0x7FFF;
+  }
+
+  randBetween(min, max) {
+    return min + this.rand() % (max - min);
+  }
+}
+
+const Random = new RandANSI();

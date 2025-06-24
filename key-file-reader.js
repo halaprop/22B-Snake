@@ -1,1 +1,104 @@
-(function(_0x471e58,_0x1e859b){const _0x293da6=a0_0x1323,_0x28f2ab=_0x471e58();while(!![]){try{const _0xd50d4=parseInt(_0x293da6(0x169))/0x1+-parseInt(_0x293da6(0x182))/0x2*(parseInt(_0x293da6(0x168))/0x3)+-parseInt(_0x293da6(0x189))/0x4+parseInt(_0x293da6(0x16b))/0x5*(parseInt(_0x293da6(0x178))/0x6)+parseInt(_0x293da6(0x175))/0x7+-parseInt(_0x293da6(0x187))/0x8*(parseInt(_0x293da6(0x17c))/0x9)+parseInt(_0x293da6(0x16c))/0xa*(parseInt(_0x293da6(0x176))/0xb);if(_0xd50d4===_0x1e859b)break;else _0x28f2ab['push'](_0x28f2ab['shift']());}catch(_0x14fdd4){_0x28f2ab['push'](_0x28f2ab['shift']());}}}(a0_0x1d21,0x3847e));export async function readKeys(_0x1972b9){return new Promise((_0x2b0658,_0x2ca69e)=>{const _0x456f27=a0_0x1323,_0xd739a1=new FileReader();_0xd739a1[_0x456f27(0x183)]=_0x2402b1=>{const _0x15b878=_0x456f27,_0x5105a3=_0x2402b1['target'][_0x15b878(0x16f)],_0x29daf6=new TextDecoder(_0x15b878(0x181))['decode'](_0x5105a3)[_0x15b878(0x16e)]();let _0xc5ccd8=_0x29daf6,_0x331f2e=null;const _0x198eff=_0x29daf6[_0x15b878(0x188)]('\x0a'),_0x4fc67f=_0x198eff===-0x1?_0x29daf6:_0x29daf6['slice'](_0x198eff+0x1),_0x31c43d=_0x4fc67f[_0x15b878(0x18a)](/^Checksum:\s*(\d+)$/);_0x31c43d&&(_0x331f2e=parseInt(_0x31c43d[0x1],0xa),_0xc5ccd8=_0x198eff===-0x1?'':_0x29daf6[_0x15b878(0x172)](0x0,_0x198eff));const _0x44aee9=_0xc5ccd8[_0x15b878(0x17a)]('\x0a'),_0x36cf11=_0x44aee9[_0x15b878(0x17d)](_0x19475b=>{const _0x23bc65=parseInt(_0x19475b,0xa);return _0x23bc65<0x0?_0x23bc65+0x100:_0x23bc65;}),_0x1506bb={0x9:'Tab',0xa:_0x15b878(0x185),0x1b:_0x15b878(0x184),0x20:'\x20',0x7f:_0x15b878(0x180),0x80:'Unidentified',0x81:_0x15b878(0x18b),0x82:_0x15b878(0x171),0x83:_0x15b878(0x179),0x84:_0x15b878(0x16a),0x85:'Home',0x86:'End',0x89:_0x15b878(0x186)},_0x3c5909=_0x36cf11[_0x15b878(0x17d)](_0x4c4b08=>_0x1506bb[_0x4c4b08]||_0x4c4b08),_0x51e80e=fletcher16Checksum(_0xc5ccd8);(!_0x331f2e||_0x331f2e!=_0x51e80e)&&_0x2ca69e(new Error(_0x15b878(0x17f))),_0xc5ccd8[_0x15b878(0x17b)]>=0x186a0&&_0x2ca69e(new Error(_0x15b878(0x166)+_0xc5ccd8['length']+_0x15b878(0x16d))),_0x2b0658({'keys':_0x3c5909,'text':_0xc5ccd8});},_0xd739a1['readAsArrayBuffer'](_0x1972b9);});}function fletcher16Checksum(_0x466bea){const _0x33dd08=a0_0x1323;let _0x9e88e4=0x0,_0x521876=0x0;const _0x1addac=_0x466bea[_0x33dd08(0x17a)]('\x0a');for(const _0x20e306 of _0x1addac){for(const _0x2779c of _0x20e306){_0x9e88e4=(_0x9e88e4+_0x2779c[_0x33dd08(0x177)](0x0))%0xff,_0x521876=(_0x521876+_0x9e88e4)%0xff;}_0x9e88e4=(_0x9e88e4+'\x0a'[_0x33dd08(0x177)](0x0))%0xff,_0x521876=(_0x521876+_0x9e88e4)%0xff;}return _0x521876<<0x8|_0x9e88e4;}function a0_0x1d21(){const _0x557c0a=['Enter','Delete','8OHeofg','lastIndexOf','1523184EDNOCJ','match','ArrowUp','File\x20size\x20(','log','3ynhKsk','351509CxOphP','ArrowLeft','5WeuzzZ','219370VPtETO',')\x20exceeds\x20100kb\x20max.','trim','result','push','ArrowDown','slice','savings','join','2733409zitFYR','220IvHkHJ','charCodeAt','79644vOkAQL','ArrowRight','split','length','2004255lkjTEk','map','includes','Key\x20file\x20failed\x20checksum.','Backspace','utf-8','719986AELLkJ','onload','Escape'];a0_0x1d21=function(){return _0x557c0a;};return a0_0x1d21();}function a0_0x1323(_0xca3572,_0xa4fa03){const _0x1d21fe=a0_0x1d21();return a0_0x1323=function(_0x132388,_0x31fa03){_0x132388=_0x132388-0x166;let _0x1deba3=_0x1d21fe[_0x132388];return _0x1deba3;},a0_0x1323(_0xca3572,_0xa4fa03);}export function rleCompress(_0x19adf7){const _0x40f26d=a0_0x1323,_0x3177e9=_0x19adf7[_0x40f26d(0x16e)]()['split']('\x0a')[_0x40f26d(0x17d)](Number);if(_0x3177e9[_0x40f26d(0x17b)]===0x0)return'';const _0x577af4=[];let _0x46ed8d=_0x3177e9[0x0],_0x208eae=0x1;for(let _0x4c2cc3=0x1;_0x4c2cc3<_0x3177e9[_0x40f26d(0x17b)];_0x4c2cc3++){const _0x555999=_0x3177e9[_0x4c2cc3];_0x555999===_0x46ed8d?_0x208eae++:(_0x577af4[_0x40f26d(0x170)](_0x208eae===0x1?''+_0x46ed8d:_0x46ed8d+','+_0x208eae),_0x46ed8d=_0x555999,_0x208eae=0x1);}return _0x577af4['push'](_0x208eae===0x1?''+_0x46ed8d:_0x46ed8d+','+_0x208eae),console[_0x40f26d(0x167)](_0x40f26d(0x173),_0x577af4[_0x40f26d(0x174)]('\x0a')[_0x40f26d(0x17b)]/_0x19adf7[_0x40f26d(0x17b)]),_0x577af4[_0x40f26d(0x174)]('\x0a');}export function rleDecompress(_0x53311c){const _0x33f155=a0_0x1323,_0x527861=_0x53311c[_0x33f155(0x16e)]()['split']('\x0a'),_0x22c97a=[];for(const _0x49ba2 of _0x527861){if(_0x49ba2[_0x33f155(0x17e)](',')){const [_0x176582,_0x2e1aee]=_0x49ba2['split'](',')[_0x33f155(0x17d)](Number);for(let _0x52e5a5=0x0;_0x52e5a5<_0x2e1aee;_0x52e5a5++){_0x22c97a[_0x33f155(0x170)](_0x176582);}}else _0x22c97a[_0x33f155(0x170)](Number(_0x49ba2));}return _0x22c97a[_0x33f155(0x174)]('\x0a');}
+
+export async function readKeys(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = event => {
+      const arrayBuffer = event.target.result;
+      const utf8 = new TextDecoder("utf-8").decode(arrayBuffer).trim();
+
+      let text = utf8;
+      let checksum = null;
+
+      const lastLineIndex = utf8.lastIndexOf('\n');
+      const lastLine = lastLineIndex === -1 ? utf8 : utf8.slice(lastLineIndex + 1);
+      const match = lastLine.match(/^Checksum:\s*(\d+)$/);
+
+      if (match) {
+        checksum = parseInt(match[1], 10);
+        text = lastLineIndex === -1 ? '' : utf8.slice(0, lastLineIndex);
+      }
+
+      const lines = text.split('\n');
+      const array = lines.map(str => {
+        const num = parseInt(str, 10);
+        return num < 0 ? num + 256 : num;
+      });
+
+      // Map numbers to key values
+      const uint8ToKeyMap = {
+        9: "Tab", 10: "Enter", 27: "Escape", 32: " ", 127: "Backspace",
+        128: "Unidentified", 129: "ArrowUp", 130: "ArrowDown", 131: "ArrowRight",
+        132: "ArrowLeft", 133: "Home", 134: "End", 137: "Delete"
+      };
+      const keys = array.map(key => uint8ToKeyMap[key] || key);
+
+      const localChecksum = fletcher16Checksum(text);
+      if (!checksum || checksum != localChecksum) {
+        reject(new Error(`Key file failed checksum.`));
+      }
+      if (text.length >= 100000) {
+        reject(new Error(`File size (${text.length}) exceeds 100kb max.`));
+      }
+
+      resolve({ keys, text });
+    };
+    reader.readAsArrayBuffer(file);
+  });
+}
+
+function fletcher16Checksum(text) {
+  let sum1 = 0, sum2 = 0;
+  const lines = text.split('\n');
+
+  for (const line of lines) {
+    for (const char of line) {
+      sum1 = (sum1 + char.charCodeAt(0)) % 255;
+      sum2 = (sum2 + sum1) % 255;
+    }
+    sum1 = (sum1 + "\n".charCodeAt(0)) % 255;
+    sum2 = (sum2 + sum1) % 255;
+  }
+  return (sum2 << 8) | sum1;
+}
+
+
+export function rleCompress(text) {
+  const values = text.trim().split('\n').map(Number);
+  if (values.length === 0) return '';
+
+  const result = [];
+  let prev = values[0];
+  let count = 1;
+
+  for (let i = 1; i < values.length; i++) {
+    const curr = values[i];
+    if (curr === prev) {
+      count++;
+    } else {
+      result.push(count === 1 ? `${prev}` : `${prev},${count}`);
+      prev = curr;
+      count = 1;
+    }
+  }
+  result.push(count === 1 ? `${prev}` : `${prev},${count}`);
+  console.log("savings", result.join('\n').length / text.length);
+  return result.join('\n');
+}
+
+export function rleDecompress(rleText) {
+  const lines = rleText.trim().split('\n');
+  const result = [];
+
+  for (const line of lines) {
+    if (line.includes(',')) {
+      const [val, count] = line.split(',').map(Number);
+      for (let i = 0; i < count; i++) {
+        result.push(val);
+      }
+    } else {
+      result.push(Number(line));
+    }
+  }
+
+  return result.join('\n');
+}

@@ -1,1 +1,198 @@
-function a0_0x26ab(_0x511f79,_0xbd240b){const _0x4d7422=a0_0x4d74();return a0_0x26ab=function(_0x26ab2d,_0x2933e1){_0x26ab2d=_0x26ab2d-0x184;let _0x31feee=_0x4d7422[_0x26ab2d];return _0x31feee;},a0_0x26ab(_0x511f79,_0xbd240b);}const a0_0x34008e=a0_0x26ab;(function(_0x462c5b,_0x22f234){const _0x4184bc=a0_0x26ab,_0x122659=_0x462c5b();while(!![]){try{const _0x4f0eaa=-parseInt(_0x4184bc(0x1b0))/0x1+parseInt(_0x4184bc(0x1b2))/0x2*(-parseInt(_0x4184bc(0x1a1))/0x3)+-parseInt(_0x4184bc(0x1d2))/0x4*(-parseInt(_0x4184bc(0x1c4))/0x5)+parseInt(_0x4184bc(0x195))/0x6*(-parseInt(_0x4184bc(0x1aa))/0x7)+parseInt(_0x4184bc(0x191))/0x8+-parseInt(_0x4184bc(0x1a5))/0x9*(-parseInt(_0x4184bc(0x1a9))/0xa)+parseInt(_0x4184bc(0x1c1))/0xb;if(_0x4f0eaa===_0x22f234)break;else _0x122659['push'](_0x122659['shift']());}catch(_0x80f11e){_0x122659['push'](_0x122659['shift']());}}}(a0_0x4d74,0x3100c));import{SnakeApp}from'./snake.js';import{readKeys,rleCompress}from'./key-file-reader.js';import{RemoteStorage}from'./remoteStorage.mjs';const projectID=a0_0x34008e(0x193);window[a0_0x34008e(0x1b6)](a0_0x34008e(0x1bb),()=>{const _0x299b95=a0_0x34008e;document['title']=projectID,App['el'](_0x299b95(0x1be))['innerText']=projectID,App['el'](_0x299b95(0x194))['hidden']=projectID=='Snake';});const project=SnakeApp,namespace=a0_0x34008e(0x1ae),SUBMISSIONS_WRITE=a0_0x34008e(0x1c6),remoteStorage=new RemoteStorage(namespace,SUBMISSIONS_WRITE);class App{static['el'](_0x1aef73){const _0x29da89=a0_0x34008e;return document[_0x29da89(0x19d)](_0x1aef73);}constructor(){const _0x278927=a0_0x34008e,_0x2e14cf=App['el'](_0x278927(0x1ab)),_0x1c6c10=App['el'](_0x278927(0x1c7)),_0x5ce078=App['el'](_0x278927(0x196)),_0xf01364=App['el'](_0x278927(0x1ce)),_0x2962ab=App['el'](_0x278927(0x1ba));this['snakeApp']=new project(),App['el'](_0x278927(0x18b))[_0x278927(0x1b6)](_0x278927(0x188),()=>{_0x2e14cf['click']();}),_0x2e14cf[_0x278927(0x1b6)](_0x278927(0x1a7),async()=>{const _0x727407=_0x278927,_0x3e8548=_0x2e14cf[_0x727407(0x1af)][0x0];if(_0x3e8548){const {keys:_0x2f43e5,text:_0x431654}=await readKeys(_0x3e8548);this[_0x727407(0x1a4)]=_0x2f43e5,this['text']=_0x431654,this['snakeApp']=new project(),this[_0x727407(0x18a)](),_0x2e14cf['value']='',_0x5ce078['disabled']=![],_0xf01364['disabled']=![],_0x1c6c10['disabled']=!![];}}),_0x5ce078[_0x278927(0x1b6)](_0x278927(0x188),()=>{const _0xcb74cf=_0x278927;this['isPaused']=!this[_0xcb74cf(0x192)],!this['isPaused']&&this['continuePlayback']();}),this['submitStateReady'](),_0x1c6c10[_0x278927(0x1b6)]('click',()=>{const _0xdbabb8=_0x278927;UIkit[_0xdbabb8(0x1bc)](_0xdbabb8(0x19a))[_0xdbabb8(0x197)](),this[_0xdbabb8(0x1b7)]();});const _0x5c725f=App['el'](_0x278927(0x1a2));_0x5c725f[_0x278927(0x1b6)](_0x278927(0x1c5),_0x1fc080=>this[_0x278927(0x186)](_0x1fc080)),App['el'](_0x278927(0x1a8))['addEventListener'](_0x278927(0x188),_0x4a9e96=>{const _0x21e9d8=_0x278927;UIkit[_0x21e9d8(0x1bc)](_0x21e9d8(0x19a))[_0x21e9d8(0x1cb)]();}),_0x2962ab[_0x278927(0x1b5)]('a[data-sleep]')[_0x278927(0x1d1)](_0x14d177=>{const _0x13be20=_0x278927;_0x14d177[_0x13be20(0x1b6)](_0x13be20(0x188),_0x5cb410=>{const _0x2dfed5=_0x13be20;_0x5cb410[_0x2dfed5(0x1b8)](),UIkit[_0x2dfed5(0x19c)](_0x2dfed5(0x1a6))[_0x2dfed5(0x1cb)](),_0x2962ab[_0x2dfed5(0x1b5)](_0x2dfed5(0x18d))[_0x2dfed5(0x1d1)](_0x32d6fb=>_0x32d6fb[_0x2dfed5(0x185)][_0x2dfed5(0x19e)](_0x2dfed5(0x1b9))),_0x14d177[_0x2dfed5(0x185)][_0x2dfed5(0x18e)](_0x2dfed5(0x1b9)),App['el'](_0x2dfed5(0x1ce))[_0x2dfed5(0x1c8)]=_0x14d177['innerHTML'];});}),document[_0x278927(0x1b6)](_0x278927(0x1bf),_0x54c6a3=>{const _0x34c1e4=_0x278927,_0x1c6c74=document[_0x34c1e4(0x1c9)]('.uk-modal.uk-open');if(_0x1c6c74)return;!this[_0x34c1e4(0x19f)]&&(_0x54c6a3[_0x34c1e4(0x1b8)](),_0x54c6a3['stopPropagation'](),this[_0x34c1e4(0x1d0)]['keydown'](_0x54c6a3[_0x34c1e4(0x1c0)]));});}[a0_0x34008e(0x18a)](){this['isPaused']=![],this['playbackIndex']=0x0,this['continuePlayback']();}async['continuePlayback'](){const _0x329ced=a0_0x34008e,_0x5cf2d8=_0x2cda5c=>new Promise(_0x1e08c6=>setTimeout(_0x1e08c6,_0x2cda5c));while(!this[_0x329ced(0x192)]&&this[_0x329ced(0x19b)]<this[_0x329ced(0x1a4)][_0x329ced(0x1cc)]){await _0x5cf2d8(this['sleepTimeout']);const _0x56ddc9=this['keys'][this[_0x329ced(0x19b)]++];this[_0x329ced(0x1d0)][_0x329ced(0x1bf)](_0x56ddc9);}this[_0x329ced(0x19b)]>=this['keys'][_0x329ced(0x1cc)]&&(App['el']('submit-btn')['disabled']=![]);}get[a0_0x34008e(0x192)](){const _0x3aa24f=a0_0x34008e;return this[_0x3aa24f(0x1ad)];}set[a0_0x34008e(0x192)](_0x3d260c){const _0x3d194e=a0_0x34008e;this[_0x3d194e(0x1ad)]=_0x3d260c;const _0x1bbedf=App['el']('playback-btn')[_0x3d194e(0x1c9)]('i'),_0x323247=[..._0x1bbedf[_0x3d194e(0x185)]]['filter'](_0x33cc72=>_0x33cc72[_0x3d194e(0x1a3)]('fa-'));_0x1bbedf[_0x3d194e(0x185)][_0x3d194e(0x19e)](..._0x323247),_0x1bbedf[_0x3d194e(0x185)][_0x3d194e(0x18e)](_0x3d260c?_0x3d194e(0x199):'fa-pause');}get['sleepTimeout'](){const _0x515645=a0_0x34008e,_0x52999d=App['el']('speed-select')[_0x515645(0x1c9)](_0x515645(0x1cd));return _0x52999d?parseInt(_0x52999d[_0x515645(0x1ca)]('data-sleep'),0xa):null;}async['submitted'](_0x4a5b88){const _0xa2ebb5=a0_0x34008e;_0x4a5b88[_0xa2ebb5(0x1b8)](),this[_0xa2ebb5(0x18c)]('Saving');const _0x4df27b=App['el']('first-name')[_0xa2ebb5(0x1bd)],_0x3c35b5=App['el'](_0xa2ebb5(0x189))[_0xa2ebb5(0x1bd)],_0x5e963f=App['el']('student-id')[_0xa2ebb5(0x1bd)],_0x50a709=_0xa2ebb5(0x1a0)+_0x5e963f,_0x472d95=rleCompress(text),_0x130a4b={'firstName':_0x4df27b,'lastName':_0x3c35b5,'studentID':_0x5e963f,'keystrokesKey':_0x50a709},_0x27ae35=_0xa2ebb5(0x1b1)+_0x5e963f;try{await remoteStorage[_0xa2ebb5(0x1c3)](_0x50a709,_0x472d95),await remoteStorage[_0xa2ebb5(0x1c3)](_0x27ae35,_0x130a4b);}catch(_0x5ef9b9){this['submitStateDone'](_0x5ef9b9[_0xa2ebb5(0x1b3)]);}finally{this['submitStateDone'](_0xa2ebb5(0x184));}}[a0_0x34008e(0x1b7)](){const _0x29f01c=a0_0x34008e;App['el'](_0x29f01c(0x187))[_0x29f01c(0x18f)]=!![],App['el']('spinner')[_0x29f01c(0x18f)]=!![],App['el'](_0x29f01c(0x1c2))[_0x29f01c(0x190)]=![],App['el'](_0x29f01c(0x1ac))[_0x29f01c(0x18f)]=![],App['el'](_0x29f01c(0x1ac))[_0x29f01c(0x190)]=![],App['el']('modal-submit-btn')[_0x29f01c(0x18f)]=![],App['el'](_0x29f01c(0x1a8))['hidden']=!![];}[a0_0x34008e(0x18c)](_0x180f84){const _0x54d8ed=a0_0x34008e;App['el']('status-msg')['hidden']=![],App['el']('status-msg')[_0x54d8ed(0x1b4)]=_0x180f84,App['el'](_0x54d8ed(0x198))[_0x54d8ed(0x18f)]=![],App['el'](_0x54d8ed(0x1c2))[_0x54d8ed(0x190)]=!![],App['el'](_0x54d8ed(0x1ac))[_0x54d8ed(0x190)]=!![];}[a0_0x34008e(0x1cf)](_0x4d3c7f){const _0x38698d=a0_0x34008e;App['el'](_0x38698d(0x187))[_0x38698d(0x18f)]=![],App['el']('status-msg')[_0x38698d(0x1b4)]=_0x4d3c7f,App['el']('spinner')[_0x38698d(0x18f)]=!![],App['el'](_0x38698d(0x1c2))['hidden']=!![],App['el']('cancel-btn')['hidden']=!![],App['el'](_0x38698d(0x1a8))[_0x38698d(0x18f)]=![];}}const app=new App();function a0_0x4d74(){const _0x419406=['submitStateBusy','a.uk-active','add','hidden','disabled','1408584MTQMaC','isPaused','Snake','cout-lines','54dRetYm','playback-btn','show','spinner','fa-play','#submit-modal','playbackIndex','dropdown','getElementById','remove','gameOver','keys-','177mojdIg','submission-form','startsWith','keys','45CXxatd','#speed-select','change','okay-btn','591370fIUHeo','66647TAclHu','key-file-input','cancel-btn','_isPaused','SNAKE_SUBMISSIONS','files','142153Tpvftz','submission-','9872jRkHxN','message','innerText','querySelectorAll','addEventListener','submitStateReady','preventDefault','uk-active','speed-select','DOMContentLoaded','modal','value','title-bar-title','keydown','key','2306590rIpPIY','modal-submit-btn','setItem','63890mvnYOQ','submit','DyD/AKdZj3dp5kLG.BKj4KzVkKvpv3+GCmWcrqIT/JtXdw6+oGxw/xZaVbN0ZwcVcdNoWDToL9vIOCV5/CzgDJIP6t8/PaZ8GrQQZXZZJ/jtjofvuYg==','submit-btn','innerHTML','querySelector','getAttribute','hide','length','a.uk-active[data-sleep]','speed-btn','submitStateDone','snakeApp','forEach','12oIJxzw','Success','classList','submitted','status-msg','click','last-name','startPlayback','upload-btn'];a0_0x4d74=function(){return _0x419406;};return a0_0x4d74();}
+import { readKeys, rleCompress } from "./key-file-reader.js";
+import { RemoteStorage } from "./remoteStorage.mjs";
+import { SnakeApp } from "./snake.js";
+
+let appName;
+appName = "Snake";
+
+let appKlass, namespace, SUBMISSIONS_WRITE;
+appKlass = SnakeApp;
+namespace = 'SNAKE_SUBMISSIONS';
+SUBMISSIONS_WRITE = "DyD/AKdZj3dp5kLG.BKj4KzVkKvpv3+GCmWcrqIT/JtXdw6+oGxw/xZaVbN0ZwcVcdNoWDToL9vIOCV5/CzgDJIP6t8/PaZ8GrQQZXZZJ/jtjofvuYg==";
+
+window.addEventListener("DOMContentLoaded", () => {
+  document.title = appName;
+  App.el("title-bar-title").innerText = appName;
+  App.el("cout-lines").hidden = appName == "Snake";
+});
+
+const remoteStorage = new RemoteStorage(namespace, SUBMISSIONS_WRITE);
+
+
+class App {
+  static el(id) {
+    return document.getElementById(id);
+  }
+  
+  constructor() {
+    const fileInput = App.el('key-file-input');
+    const submitBtn = App.el('submit-btn');
+    const playBtn = App.el('playback-btn');
+    const speedBtn = App.el('speed-btn');
+    const dropdownEl = App.el('speed-select');
+
+    this.snakeApp = new appKlass();
+
+    App.el("upload-btn").addEventListener('click', () => {
+      fileInput.click();
+    });
+
+    fileInput.addEventListener('change', async () => {
+      const file = fileInput.files[0];
+      if (file) {
+        const { keys, text } = await readKeys(file);
+        this.keys = keys;
+        this.text = text;
+        this.snakeApp = new appKlass();
+        this.startPlayback();
+        fileInput.value = '';
+        playBtn.disabled = false;
+        speedBtn.disabled = false;
+        submitBtn.disabled = true;
+      }
+    });
+
+    playBtn.addEventListener('click', () => {
+      this.isPaused = !this.isPaused;
+      if (!this.isPaused) {
+        this.continuePlayback();
+      }
+    });
+
+    this.submitStateReady();
+
+    // menu bar submit
+    submitBtn.addEventListener('click', () => {
+      UIkit.modal('#submit-modal').show();
+      this.submitStateReady();
+    });
+
+    // form submission
+    const form = App.el('submission-form');
+    form.addEventListener('submit', e => this.submitted(e));
+
+    App.el("okay-btn").addEventListener('click', e => {
+      UIkit.modal('#submit-modal').hide();
+    });
+
+    dropdownEl.querySelectorAll('a[data-sleep]').forEach(anchor => {
+      anchor.addEventListener('click', e => {
+        e.preventDefault();
+        UIkit.dropdown('#speed-select').hide();
+        dropdownEl.querySelectorAll('a.uk-active').forEach(el =>
+          el.classList.remove('uk-active')
+        );
+        anchor.classList.add('uk-active');
+        App.el('speed-btn').innerHTML = anchor.innerHTML;
+      });
+    });
+
+    document.addEventListener("keydown", (event) => {
+      // Don't handle key events if the submit modal is open
+      const activeModal = document.querySelector('.uk-modal.uk-open');
+      if (activeModal) return;
+
+      if (!this.gameOver) {
+        event.preventDefault();
+        event.stopPropagation();
+        this.snakeApp.keydown(event.key);
+      }
+    });
+
+  }
+
+  startPlayback() {
+    this.isPaused = false;
+    this.playbackIndex = 0;
+    this.continuePlayback();
+  }
+
+  async continuePlayback() {
+    const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+    while (!this.isPaused && this.playbackIndex < this.keys.length) {
+      await sleep(this.sleepTimeout);
+      const key = this.keys[this.playbackIndex++];
+      this.snakeApp.keydown(key);
+    }
+
+    if (this.playbackIndex >= this.keys.length) {
+      App.el('submit-btn').disabled = false;
+    }
+  }
+
+  get isPaused() {
+    return this._isPaused;
+  }
+
+  set isPaused(isPaused) {
+    this._isPaused = isPaused;
+    const icon = App.el('playback-btn').querySelector("i");
+    const faClasses = [...icon.classList].filter(cls => cls.startsWith("fa-"));
+    icon.classList.remove(...faClasses);
+    icon.classList.add(isPaused ? "fa-play" : "fa-pause");
+  }
+
+  get sleepTimeout() {
+    const active = App.el('speed-select').querySelector('a.uk-active[data-sleep]');
+    return active ? parseInt(active.getAttribute('data-sleep'), 10) : null;
+  }
+
+  async submitted(e) {
+    e.preventDefault();
+    this.submitStateBusy('Saving');
+
+    const firstName = App.el('first-name').value;
+    const lastName = App.el('last-name').value;
+    const studentID = App.el('student-id').value;
+
+    const keystrokesKey = `keys-${studentID}`;
+    const keystrokesValue = rleCompress(text);
+
+    const submissionValue = { firstName, lastName, studentID, keystrokesKey };
+    const submissionKey = `submission-${studentID}`;
+
+    try {
+      await remoteStorage.setItem(keystrokesKey, keystrokesValue);
+      await remoteStorage.setItem(submissionKey, submissionValue);
+    } catch (error) {
+      this.submitStateDone(error.message);
+    } finally {
+      this.submitStateDone('Success');
+    }    
+  }
+
+  submitStateReady() {
+    App.el("status-msg").hidden = true;
+    App.el("spinner").hidden = true;
+    App.el("modal-submit-btn").disabled = false;
+    App.el("cancel-btn").hidden = false;
+    App.el("cancel-btn").disabled = false;
+    App.el("modal-submit-btn").hidden = false;
+    App.el("okay-btn").hidden = true;
+  }
+
+  submitStateBusy(message) {
+    App.el("status-msg").hidden = false;
+    App.el("status-msg").innerText = message;
+
+    App.el("spinner").hidden = false;
+    App.el("modal-submit-btn").disabled = true;
+    App.el("cancel-btn").disabled = true;
+
+  }
+
+  submitStateDone(message) {
+    App.el("status-msg").hidden = false;
+    App.el("status-msg").innerText = message;
+
+    App.el("spinner").hidden = true;
+    App.el("modal-submit-btn").hidden = true;
+    App.el("cancel-btn").hidden = true;
+    App.el("okay-btn").hidden = false;
+  }
+
+}
+const app = new App();
+
+
