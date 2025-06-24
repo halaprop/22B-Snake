@@ -5,11 +5,13 @@
 import { SnakeApp } from "./snake.js";
 
 // This file is unaltered in dev. In dev, project is determined by the "project" query param.
-// build deletes the params variable and sets the projectID to Snake or Creatures.
+// build leaves the params variable untouched.
 const params = new URLSearchParams(window.location.search);
 
+// build omits the projectID variable and sets projectKlass to either of the imported classes
+const projectKlass = SnakeApp;
+
 // build replaces these ternarys with one or the other value
-const project = SnakeApp;
 const namespace = "SNAKE_SUBMISSIONS";
 const SUBMISSIONS_WRITE = "DyD/AKdZj3dp5kLG.BKj4KzVkKvpv3+GCmWcrqIT/JtXdw6+oGxw/xZaVbN0ZwcVcdNoWDToL9vIOCV5/CzgDJIP6t8/PaZ8GrQQZXZZJ/jtjofvuYg==";
 //
@@ -38,7 +40,7 @@ class App {
     const speedBtn = App.el('speed-btn');
     const dropdownEl = App.el('speed-select');
 
-    this.snakeApp = new project;
+    this.snakeApp = new projectKlass();
 
     App.el("upload-btn").addEventListener('click', () => {
       fileInput.click();
@@ -50,7 +52,7 @@ class App {
         const { keys, text } = await readKeys(file);
         this.keys = keys;
         this.text = text;
-        this.snakeApp = new project;
+        this.snakeApp = new projectKlass();
         this.startPlayback();
         fileInput.value = '';
         playBtn.disabled = false;
