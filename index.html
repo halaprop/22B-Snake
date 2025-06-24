@@ -19,7 +19,7 @@
     <div class="uk-navbar-left uk-light">
       <span id="title-bar-title" class="uk-navbar-item uk-logo uk-margin-left"></span>
     </div>
-    <div class="uk-navbar-right">
+    <div class="uk-navbar-right uk-visible@s">
       <button id="upload-btn" class="uk-button uk-button-default uk-light" type="button">Upload Key File</button>
       <button id="submit-btn" class="uk-button uk-button-primary uk-light uk-margin-right" type="button"
         disabled>Submit</button>
@@ -34,9 +34,10 @@
   </div>
 
   <!-- Footer -->
-  <div id="footer-bar" class="uk-flex uk-padding-small">
+  <div id="footer-bar" class="uk-flex uk-padding-small uk-visible@s">
     <button disabled id="playback-btn" class="uk-button playback-control-btn"><i class="fa fa-pause"></i></button>
-    <button disabled id="speed-btn" class="uk-button uk-margin-left playback-control-btn" type="button">1 &times;</button>
+    <button disabled id="speed-btn" class="uk-button uk-margin-left playback-control-btn" type="button">1
+      &times;</button>
     <div id="speed-select" uk-dropdown="mode: click">
       <ul class="uk-nav uk-dropdown-nav">
         <li><a href="#" data-sleep="240">&frac14; &times;</a></li>
