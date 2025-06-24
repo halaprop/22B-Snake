@@ -3,7 +3,7 @@
 import { SnakeApp } from "./snake.js";
 
 // In dev, this file is unaltered. Query param determines projectID.
-// build.sh replaces these ternarys with either a snake or creatures value:
+// build.sh replaces these lines with either a snake or creatures value:
 const projectID = (new URLSearchParams(window.location.search)).get("project")?.toLowerCase() === "snake" ? "Snake" : "Creatures";
 const project = SnakeApp;
 const namespace = "SNAKE_SUBMISSIONS";
