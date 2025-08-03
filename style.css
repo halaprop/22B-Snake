@@ -18,6 +18,7 @@
     canvas {
       max-width: 90vw;
       height: auto;
+      margin-left: 0.4em;
     }
 
     .uk-navbar-item.uk-logo {
@@ -34,9 +35,10 @@
     .main-container {
       flex: 1;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 10px;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 0 10px 10px;
+      /* top, right, bottom, left */
     }
 
     canvas {
@@ -44,9 +46,9 @@
     }
 
     .vt100 {
-      width: 90%;
-      height: 15rem;
-      padding: 0.4em 0 0 0.4em;
+      width: 100%;
+      max-width: 90vw;
+      padding: 0.4em 0.4em 0 0.4em;
 
       font-family: monospace;
       font-size: 0.8em;
@@ -74,4 +76,17 @@
       min-width: 3ch;
       text-align: right;
       color: white
+    }
+
+    .uk-offcanvas-bar.custom-width {
+      width: 500px;
+      max-width: 90vw;
+    }
+
+    /* These enable pointer events outside of the admin sidebar to pass to the app */
+    .uk-offcanvas-overlay {
+      pointer-events: none !important;
+    }
+    .uk-offcanvas-bar {
+      pointer-events: auto;
     }

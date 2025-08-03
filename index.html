@@ -29,23 +29,61 @@
 
   <!-- Main -->
   <div class="main-container uk-flex uk-flex-column">
-    <canvas id="main-canvas"></canvas>
-    <div id="cout-lines" class="vt100 uk-margin"></div>
+    <canvas id="main-canvas" class="uk-margin-left uk-margin-top"></canvas>
+    <div id="cout-lines" class="vt100 uk-margin-left"></div>
+  </div>
+
+  <!-- Admin Panel -->
+  <div id="offcanvas-right" uk-offcanvas="mode: slide; overlay: true; flip: true; bg-close: false">
+    <div class="uk-offcanvas-bar custom-width">
+      <button class="uk-offcanvas-close" type="button" uk-close></button>
+      <h3>Submissions</h3>
+
+      <table id="submissions-table" class="uk-table uk-table-small uk-table-divider uk-text-small uk-margin-remove">
+        <thead>
+          <tr id="submissions-header"></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <template id="submission-row-template">
+        <tr>
+          <td class="name"></td>
+          <td class="checkbox-cell">
+            <input type="checkbox" class="uk-checkbox" disabled>
+          </td>
+          <td class="turns"></td>
+          <td class="value"></td>
+          <td><button class="uk-button uk-button-default uk-button-small">Play</button></td>
+        </tr>
+      </template>
+    </div>
   </div>
 
   <!-- Footer -->
-  <div id="footer-bar" class="uk-flex uk-padding-small uk-visible@s">
-    <button disabled id="playback-btn" class="uk-button playback-control-btn"><i class="fa fa-pause"></i></button>
-    <button disabled id="speed-btn" class="uk-button uk-margin-left playback-control-btn" type="button">1
-      &times;</button>
-    <div id="speed-select" uk-dropdown="mode: click">
-      <ul class="uk-nav uk-dropdown-nav">
-        <li><a href="#" data-sleep="240">&frac14; &times;</a></li>
-        <li><a href="#" data-sleep="120">&frac12; &times;</a></li>
-        <li><a href="#" data-sleep="60" class="uk-active">1 &times;</a></li>
-        <li><a href="#" data-sleep="30">2 &times;</a></li>
-        <li><a href="#" data-sleep="15">4 &times;</a></li>
-      </ul>
+  <div id="footer-bar" class="uk-flex uk-flex-between uk-padding-small uk-visible@s uk-flex-middle">
+    <div>
+      <button disabled id="playback-btn" class="uk-button playback-control-btn">
+        <i class="fa fa-pause"></i>
+      </button>
+      <button disabled id="speed-btn" class="uk-button uk-margin-left playback-control-btn" type="button">
+        1 &times;
+      </button>
+      <div id="speed-select" uk-dropdown="mode: click">
+        <ul class="uk-nav uk-dropdown-nav">
+          <li><a href="#" data-sleep="240">&frac14; &times;</a></li>
+          <li><a href="#" data-sleep="120">&frac12; &times;</a></li>
+          <li><a href="#" data-sleep="60" class="uk-active">1 &times;</a></li>
+          <li><a href="#" data-sleep="30">2 &times;</a></li>
+          <li><a href="#" data-sleep="15">4 &times;</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Admin -->
+    <div>
+      <a id="submissions-toggle" href="#" class="uk-link-muted uk-margin-right"
+        uk-toggle="target: #offcanvas-right">Submissions</a>
+      <a id="admin-btn" href="#" class="uk-link-muted uk-margin-right">Admin</a>
     </div>
   </div>
 
